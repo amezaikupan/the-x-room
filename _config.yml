@@ -1,9 +1,9 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: the_x_room
+author: tn
+subtitle: Data Science x Engineering x Ideas (maybe comics) 
 
 url: "https://rahulbothra.com"
-baseurl: "/parchment"
+baseurl: "/the_x_room"
 
 footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
