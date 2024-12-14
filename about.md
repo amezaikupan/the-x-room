@@ -3,8 +3,6 @@ layout: default
 title: About Me
 ---
 
-<img class="profile-picture" src="{{site.baseurl}}/{{site.profile-picture}}">
-
 I'm TN. 
 I'm studying to be a Data Scientist and overall problem solver using many tools.
 
