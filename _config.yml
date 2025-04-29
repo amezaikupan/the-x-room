@@ -20,5 +20,8 @@ sass:
 navbar:
  - name: "About"
    link: "about"
- - name: "Resume"
+ - name: "Portfolio"
    absolute-link: ""
+ - name: "List of mentors"
+   link: "mentors"
+
