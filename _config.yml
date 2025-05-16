@@ -3,7 +3,7 @@ author: tn
 subtitle: Data Science x Engineering x Ideas (maybe comics) 
 
 url: "https://amezaikupan.github.io"
-baseurl: "/the_x_room"
+baseurl: "/the_room"
 
 footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
@@ -22,6 +22,6 @@ navbar:
    link: "about"
  - name: "Resources"
    absolute-link: ""
- - name: "List of mentors"
-   link: "mentors"
+ - name: "Experiments"
+   link: "experiments"
 
