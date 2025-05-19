@@ -6,7 +6,7 @@ title: About Me
 <div style="display: flex; align-items: flex-start; gap: 20px;">
 
 <div>
-<img src="assets/self-portrait.png" alt="Self Portrait" style="max-width: 200px; border-radius: 10px;">
+<img src="assets/self-portrait.png" alt="Self Portrait" style="max-width: 100px; border-radius: 10px;">
 </div>
 
 <div>
