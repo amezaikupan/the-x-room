@@ -20,8 +20,8 @@ sass:
 navbar:
  - name: "About"
    link: "about"
- - name: "Resources"
-   absolute-link: ""
+#  - name: "Resources"
+#    absolute-link: ""
  - name: "Experiments"
    link: "experiments"
 
