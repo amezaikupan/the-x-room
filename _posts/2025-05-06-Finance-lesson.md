@@ -19,8 +19,10 @@ Long story short, I started to pay more attention to how I would design my perso
 - Enabling: I should feel easy to save/invest 
 
 Curious? This is how it works (very simple):
-<!-- ![Simple finance framework](../assets/fin_model.svg) -->
-<img src="../assets/fin_model.svg" alt="Simple finance framework"/>
+![Simple finance framework](../assets/fin_model.svg)
+<!-- <img src="../assets/fin_model.svg" alt="Simple finance framework"/> -->
+<!-- <img src="../assets/fin_model.svg" alt="Simple finance framework"/> -->
+<!-- <img src="{{ site.baseurl }}/assets/fin_model.svg" alt="Simple finance framework"/> -->
 
 
 Set up:
