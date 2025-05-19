@@ -10,10 +10,12 @@ title: About Me
 </div>
 
 <div>
+  {% capture markdown_text %}
 I'm TN.  
 I'm studying to be a data scientist, a comic writer, and overall, a good problem solver.  
 
 **Basic stuff about me:**  
+
 - 50% of my happiness is determined by sleep. The other 20% comes from good food.  
 - My current beautiful (-ly foolish) endeavor:  
     - Learning to observe (myself and my surroundings)  
@@ -21,6 +23,8 @@ I'm studying to be a data scientist, a comic writer, and overall, a good problem
     - How to relationship  
 - Current battle (to be won): My fear of coding (and heavily technical things).  
 - Asking around to find a way to imagine a better world.  
+  {% endcapture %}
+  {{ markdown_text | markdownify }}
 </div>
 
 </div>
