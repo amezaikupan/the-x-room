@@ -6,7 +6,7 @@ title: About Me
 <div style="display: flex; align-items: flex-start; gap: 20px;">
 
 <div>
-<img src="{{ site.baseurl }}/assets/self-portrait.png" alt="Self Portrait" style="max-width: 200px; border-radius: 10px;">
+<img src="{{ site.baseurl }}/assets/self-portrait.png" alt="Self Portrait" style="max-width: 300px; border-radius: 10px;">
 </div>
 
 <div>
@@ -29,9 +29,10 @@ I'm studying to be a data scientist, a comic writer, and overall, a good problem
 
 </div>
 
-Keywords: 
+**Keywords**: 
 - Art: Comic; Relationship comics 
 - Technical: Data Science; Causal inference.
 
 ### Contact Me
-My email is [here](pltnhi11@gmail.com).
+My email is pltnhi at gmail.com
+You can also find me on [instagram](https://www.instagram.com/insramen_/).
