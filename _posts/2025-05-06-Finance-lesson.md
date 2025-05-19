@@ -19,7 +19,9 @@ Long story short, I started to pay more attention to how I would design my perso
 - Enabling: I should feel easy to save/invest 
 
 Curious? This is how it works (very simple):
-![Simple finance framework](../assets/fin_model.svg)
+<!-- ![Simple finance framework](../assets/fin_model.svg) -->
+<img src="../assets/fin_model.svg" alt="Simple finance framework"/>
+
 
 Set up:
 - Make two bank accounts (from 2 banks. Choose trust-worthy banks!).
