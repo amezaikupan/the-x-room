@@ -3,7 +3,7 @@
 ---
 // Customization Variables
 
-$accent: #FF0F00;
+$accent: #2563eb;
 
 $max-width: 740px;
 $med-width: 600px;
@@ -13,25 +13,33 @@ $small-width: 480px;
 
 body {
     margin: 0;
-    font-family: "Inconsolata";
-    background-color: #FFFFDD;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background-color: #ffffff;
     min-height: 100%;
+    color: #374151;
+    line-height: 1.6;
 }
 a {
     text-decoration: none;
     color: $accent;
+    transition: all 0.2s ease;
 }
 a:hover {
-    text-decoration: underline;
+    color: #1d4ed8;
+    text-decoration: none;
 }
 hr {
-    margin: 5px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
 }
 code {
-    background-color: #d8e7ff;
-    color: #002b72;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid #e2e8f0;
 }
 
 // divs
@@ -45,6 +53,7 @@ code {
 .container {
     max-width: $max-width;
     margin: auto;
+    padding: 0 20px;
 }
 
 // Navbar
@@ -61,64 +70,93 @@ code {
         margin: 0 5px 0 10px;
     }
 
-    padding: 30px 0 20px 0;
+    padding: 40px 0 30px 0;
+    border-bottom: 1px solid #f1f5f9;
     .site-title{
-        font-size: 32px;
-        color: #272727;
+        font-size: 28px;
+        color: #111827;
         display: inline-block;
+        font-weight: 600;
+        letter-spacing: -0.025em;
     }
 }
 
 // index
 .post-card{
-    margin-top:1em;
-    margin-bottom:1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 24px 0;
+    border-bottom: 1px solid #f1f5f9;
+    
+    &:last-child {
+        border-bottom: none;
+    }
+    
     .title{
         max-width: 500px;
-        color: #272727;
+        color: #111827;
         display: inline-block;
-        font-size: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 8px;
     }
     .details{
         @extend .pull-right;
         text-align: right;
         margin-left: 20px;
-        font-size: 15px;
+        font-size: 14px;
+        color: #6b7280;
     }
     .subtitle{
         max-width: 500px;
+        color: #6b7280;
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 
 .no-post{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
     font-style: italic;
+    color: #9ca3af;
 }
 
 // pages
 
 .page-title{
     text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    line-height: 2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111827;
+    margin-bottom: 16px;
 }
 .page-subtitle{
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    color: #6b7280;
+    font-size: 18px;
 }
 
 // footer
 
 .footer{
     a {
-        color:black;
+        color: #6b7280;
+        transition: color 0.2s ease;
+    }
+    a:hover {
+        color: #374151;
     }
     text-align: center;
-    font-size: small;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    font-size: 14px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #f1f5f9;
+    color: #9ca3af;
 }
 
 // Mobile
@@ -127,12 +165,14 @@ code {
     .container {
         max-width: $med-width;
         transition: 0.3s ease all;
+        padding: 0 16px;
     }
 }
 
 @media (max-width: 650px) {
     .container {
-        max-width: 83%;
+        max-width: 90%;
+        padding: 0 16px;
     }
     .navbar{
         ul{
@@ -144,7 +184,7 @@ code {
 @media (max-width: 500px) {
 	.navbar {
 		text-align: center;
-        padding: 50px 0px 0px 0px;
+        padding: 30px 0 20px 0;
         ul{
             padding: 10px 0 10px 0;
             margin: 0;
@@ -169,17 +209,38 @@ code {
 //  typography
 
 .content {
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 16px;
+    
     h1, h2, h3, h4 {
-        margin-block-start: 2em !important;
-        margin-block-end: 0em !important;
+        margin-block-start: 2.5em !important;
+        margin-block-end: 0.5em !important;
+        color: #111827;
+        font-weight: 600;
+        line-height: 1.25;
     }
+    
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    
     h1:after, h2:after, h3:after, h4:after {
         content: '';
         display: block;
-        width: 50%;
-        border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 0.5px solid rgba(50, 50, 50, 0.3);
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, $accent, transparent);
+        margin-top: 8px;
+        border-radius: 2px;
     }
 
     ol {
@@ -189,34 +250,42 @@ code {
         list-style-position: none;
         position: relative;
         list-style: none;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 8px;
     }
     ul > li {
-        margin: 5px 0 5px 0;
+        margin: 8px 0 8px 0;
     }
     ul {
-        padding: 0 20px 0 20px;;
+        padding: 0 20px 0 20px;
     }
     ol {
         padding: 0 30px 0 30px;
     }
     ol > li:before {
-        content: "[" counter(list, decimal) "] ";
+        content: counter(list, decimal) ".";
         counter-increment: list;
         position: absolute;
-        left: -30px;
+        left: -24px;
+        font-weight: 600;
+        color: $accent;
     }
     blockquote {
-        border-left: 5px solid #333333;
-        margin: 5px 0;
-        padding: 0px 8px;
+        border-left: 4px solid #e2e8f0;
+        margin: 24px 0;
+        padding: 16px 20px;
+        background-color: #f8fafc;
         font-style: italic;
+        color: #64748b;
+        border-radius: 0 4px 4px 0;
     }
     .profile-picture {
         width: 15%;
         margin: 5px 5px 5px 5px;
         float: right;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
         p & {
             padding: 0;
             margin: 0;
@@ -229,63 +298,80 @@ code {
     }
     img {
         text-align: center;
-        margin: 10px 10px 10px 10px;
-        max-width: $max-width;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     }
 
     .color-red {
-        color: #FF0F00;
+        color: #ef4444;
     }
     .color-orange {
-        color: #eb9800;
+        color: #f97316;
     }
     .color-green {
-        color:#00eb1d;
+        color: #22c55e;
     }
     .color-blue{
-        color: #0062ff;
+        color: #3b82f6;
     }
     .highlight-red {
-        background-color: #ffaaaa;
+        background-color: #fef2f2;
+        padding: 2px 4px;
+        border-radius: 3px;
     }
     .highlight-orange {
-        background-color: #ffd486;
+        background-color: #fff7ed;
+        padding: 2px 4px;
+        border-radius: 3px;
     }
     .highlight-green {
-        background-color: #aaffad;
+        background-color: #f0fdf4;
+        padding: 2px 4px;
+        border-radius: 3px;
     }
     .highlight-blue {
-        background-color: #d8e7ff;
+        background-color: #eff6ff;
+        padding: 2px 4px;
+        border-radius: 3px;
     }
 }
 
 table {
-    margin: 15px 0;
+    margin: 24px 0;
     border-collapse: collapse;
     width: 100%;
     padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 table tr {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #f3f4f6;
     background-color: white;
     margin: 0;
     padding: 0;
 }
 table tr:nth-child(2n) {
-    background-color: #f8f8f8;
+    background-color: #f9fafb;
 }
 table tr th {
-    font-weight: bold;
-    border: 1px solid #cccccc;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
     text-align: left;
     margin: 0;
-    padding: 6px 13px;
+    padding: 12px 16px;
+    background-color: #f8fafc;
+    color: #374151;
 }
 table tr td {
-    border: 1px solid #cccccc;
+    border: 1px solid #f3f4f6;
     text-align: left;
     margin: 0;
-    padding: 6px 13px;
+    padding: 12px 16px;
+    color: #4b5563;
 }
 table tr th :first-child, table tr td :first-child {
     margin: 0;
